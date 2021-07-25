@@ -23,5 +23,15 @@ h1 {
 
 p {
     margin-left: 20px;
-    
+    margin-bottom: 50px;
+
+}
+
+h2 {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-left: 75px;
 }
