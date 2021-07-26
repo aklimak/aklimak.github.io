@@ -41,7 +41,7 @@ li {
 
 .socialMedia {
     max-width: 40px;
-    margin-right: 30px;
+    margin-right: 5px;
 }
 
 div ul {
@@ -52,4 +52,8 @@ div ul {
 .linkedin {
     max-width: 22px;
     
+}
+
+a img {
+    margin-left: 15px;
 }
