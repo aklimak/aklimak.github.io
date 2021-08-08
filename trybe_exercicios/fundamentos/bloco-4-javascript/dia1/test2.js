@@ -1,13 +1,9 @@
-const a = 2;
-const b = 5;
-const c = 9;
+const a = 11;
+const b = 20;
 
-if (a > b && a > c) {
-    console.log(a);
+if (a > b) {
+    console.log(a)
 }
-else if (b > a && b > c) {
-    console.log(b);
-}
-else if (c > a && c > b) {
-    console.log(c);
+else {
+    console.log(b)
 }

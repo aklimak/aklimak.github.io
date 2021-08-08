@@ -1,9 +1,9 @@
-const a = 11;
-const b = 20;
+const a = 9;
+const b = 4;
 
-if (a > b) {
-    console.log(a)
-}
-else {
-    console.log(b)
-}
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+
