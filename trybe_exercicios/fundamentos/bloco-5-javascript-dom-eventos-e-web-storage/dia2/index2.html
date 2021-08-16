@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script> // Código
+    // Ex 1
+      let newH1 = document.createElement('h1');
+      newH1.innerText = "Exercício 5.2 - JavaScript DOM";
+      document.body.appendChild(newH1);
+    // Ex 2
+      let newMain = document.createElement('main');
+      newMain.className = 'main-content';
+      document.body.appendChild(newMain);
+    // Ex 3
+      let newSection = document.createElement('section');
+      newSection.className = 'center-content';
+      newMain.appendChild(newSection);
+    // Ex 4
+      let newP = document.createElement('p');
+      newP.innerText = "Exercício 4";
+      newSection.appendChild(newP);
+    // Ex 5
+      let secondSection = document.createElement('section');
+      secondSection.className = 'left-content';
+      newMain.appendChild(secondSection);
+    // Ex 6 
+      let thirdSection = document.createElement('section');
+      thirdSection.className = 'right-content';
+      newMain.appendChild(thirdSection);
+    // Ex 7
+      let image = document.createElement('img');
+      image.className = 'small-image';
+      image.src = 'https://picsum.photos/200';
+      secondSection.appendChild(image);
+    // Ex 8
+      let list = document.createElement('ul');
+      thirdSection.appendChild(list);
+      for (let i = 1; i <= 10; i += 1) {
+          let listItems = document.createElement('li');
+          listItems.innerHTML = i;
+          list.appendChild(listItems); 
+      }    
+    // Ex 9 
+      for (i = 1; i <= 3; i += 1) {
+        let threeH3 = document.createElement('h3');
+        threeH3.innerHTML = "Show " + i;
+        newMain.appendChild(threeH3);
+      }
+    // Ex 10
+      newH1.className = 'title';
+    // Ex 11
+      let description = document.getElementsByTagName('h3');
+      for (let i = 0; i < 3; i += 1) {
+         description[i].className = 'description';
+      }
+    // Ex 12
+      let leftContent = document.getElementsByClassName('left-content')[0];
+      newMain.removeChild(leftContent);
+    // Ex 13 
+      let rightContent = document.getElementsByClassName('right-content')[0];
+      rightContent.style.marginRight = 'auto';
+    // Ex 14 
+      let centerContent = document.getElementsByClassName('center-content')[0];
+      centerContent.style.background = 'green';
+    // Ex 15
+      for (i = 9; i >= 8; i -= 1) {
+        let removeFromList = document.getElementsByTagName('li')[i];
+        removeFromList.remove();
+      }
+    </script>
+  </body>
+</html>
