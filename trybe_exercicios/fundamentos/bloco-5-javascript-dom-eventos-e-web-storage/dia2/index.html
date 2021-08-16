@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+      <script>
+          // Acesse o elemento onde você está
+        let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+          // Acesse o pai a partir do elemento onde você está e adicione uma cor a ele
+        let elementoPai = document.getElementById(elementoOndeVoceEsta).parentElement;
+        elementoPai.style.color = 'red';    
+          // Acesse o primeiroFilhoDoFilho e adicione um texto a ele
+        let textoPrimeiroFilhoDoFilho = elementoOndeVoceEsta.firstElementChild;
+        textoPrimeiroFilhoDoFilho.innerHTML = "primeiroFilhoDoFilho"
+          // Acesse o primeiro filho a partir de pai
+        let primeiroFilho = pai.firstElementChild;
+          // Acesse o primeiro filho a partir do elemento onde você está
+        let primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
+          // Acesse o texto "Atenção!" a partir do elemente onde voce está
+        let textoAtencao = elementoOndeVoceEsta.nextSibling;
+          // Acesse o terceiro filho a partir do elemento onde voce esta
+        let terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
+          // Acesse o terceiro filho a partir de pai
+        let terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+      </script>
+</body>
+</html>
