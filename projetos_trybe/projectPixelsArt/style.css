@@ -1,0 +1,38 @@
+.color {
+    height: 40px;
+    width: 40px;
+    border: solid 1px black;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#green-button { 
+    background-color:chartreuse;
+}
+
+#blue-button {
+    background-color:deepskyblue;
+}
+
+#yellow-button {
+    background-color:yellow;
+}
+
+#black-button {
+    background-color:black;
+}
+
+.pixel {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: solid 1px black;
+    background-color: white;
+    }
+
+#clear-board {
+    margin-bottom: 20px;
+}
+
+#pixel-board {
+}
